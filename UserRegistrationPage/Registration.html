@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="RegisterStyling.css">
+</head>
+<body>
+<div class="container">
+    <div class="title">Registration</div>
+        <form id="registrationForm">
+
+        <div class="userDetails">
+            <div class="inputBox">
+                <label for="firstName" class="details">First Name</label>
+                <input type=text id="firstName" placeholder="Enter Your First Name" required/>
+            </div>
+            <div class="inputBox">
+                <label for="lastName" class="details">Last Name</label>
+                <input type=text id="lastName" placeholder="Enter Your Last Name" required/>
+            </div>
+            <div class="inputBox">
+                <label for="userName" class="details">Username</label>
+                <input type=text id="userName" placeholder="Enter Your Username" required/>
+            </div>
+            <div class="inputBox">
+                <label for="email" class="details">Email</label>
+                <input type=email id="email" placeholder="Enter Your Email" required/>
+            </div>
+            <div class="inputBox">
+                <label for="phoneNumber" class="details">Phone Number</label>
+                <input type=tel id="phoneNumber" placeholder="Enter Your Phone Number" required/>
+            </div>
+            <div class="inputBox">
+                <label for="HomeAddress" class="details">Home Address</label>
+                <input type=text id="HomeAddress" placeholder="Enter Your Home Address" required>
+            </div>
+            <div class="inputBox">
+                <label for="password" class="details">Password</label>
+                <input type=password id="password" placeholder="Enter Password it should be 6 character" required>
+            </div>
+            <div class="inputBox">
+                <label for="confirmPassword" class="details">Confirm Password</label>
+                <input type=password id="confirmPassword" placeholder="Confirm Your Password" required>
+            </div>
+        </div>
+        <div class="genderDetails">
+            <span class="genderTitle">Gender</span>
+            <div class="category">
+                <label for="dot-1">
+                    <input type=radio name="gender" id="dot-1" required>
+                    <span class="dot"></span>
+                    <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                    <input type=radio name="gender" id="dot-2" required>
+                    <span class="dot"></span>
+                    <span class="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                    <input type=radio name="gender" id="dot-3" required>
+                    <span class="dot"></span>
+                    <span class="gender">Prefer Not to Say</span>
+                </label>
+            </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="Register">
+        </div>
+        <div class="button">
+            <a href="../Contact/myPhoneApp.html" class="customize-button">Back</a>
+        </div>
+    </form>
+</div>
+<script src="UserRegister.js"></script>
+</body>
+</html>
